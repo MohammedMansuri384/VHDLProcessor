@@ -1,0 +1,185 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\quartus\lab6\simulation\qsim
+v\4to16decoder 
+Z1 Inz`33ma3B0:nP7k5JmAfB0
+Z2 VLX49d<mM=^KdM;keheNDW3
+Z3 dD:\altera\quartus\lab6\simulation\qsim
+Z4 w1700278555
+Z5 8lab6.vo
+Z6 Flab6.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@1344to16decoder@040
+Z10 !s100 iWEB2aE7>LX^m]ol25f;S2
+Z11 !s108 1700278556.277000
+Z12 !s107 lab6.vo|
+Z13 !s90 -work|work|lab6.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vALU
+Z14 IAgLFSglMz[]^n;AzRS<Oz2
+Z15 V<2ZnR5ogThnP5DCQWM3G71
+R3
+Z16 w1700354823
+R5
+R6
+L0 31
+R7
+r1
+31
+R13
+R8
+Z17 n@a@l@u
+!i10b 1
+Z18 !s100 fFgYa8:Fc>3TNYQ45W0=b1
+!s85 0
+Z19 !s108 1700354825.290000
+R12
+!s101 -O0
+vALU_vlg_check_tst
+!i10b 1
+!s100 LmneQhoSa9WA8GHl3Ib0:3
+Ii:3hl?8:J[Ck[eePUJ7Cf0
+Z20 VmL>_RdjC<PzZ80TjQa:I21
+R3
+Z21 w1700354822
+Z22 8lab6.vt
+Z23 Flab6.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z24 !s108 1700354825.435000
+Z25 !s107 lab6.vt|
+Z26 !s90 -work|work|lab6.vt|
+!s101 -O0
+R8
+Z27 n@a@l@u_vlg_check_tst
+vALU_vlg_sample_tst
+!i10b 1
+!s100 <l1OQk3<zjX:4:DFIYV]G2
+Igb55U^VlS:_:D7`bkn;NJ2
+V8E]>iNN7]SZXg[XZz]37z0
+R3
+R21
+R22
+R23
+L0 29
+R7
+r1
+!s85 0
+31
+R24
+R25
+R26
+!s101 -O0
+R8
+Z28 n@a@l@u_vlg_sample_tst
+vALU_vlg_vec_tst
+!i10b 1
+!s100 K`hXGAKVXC]eJRX0zSmO[2
+IPk3P7i:XW]TLLRdmZcnkS2
+Z29 V>bFnnU[^IecCM5^<l3;]W0
+R3
+R21
+R22
+R23
+L0 318
+R7
+r1
+!s85 0
+31
+R24
+R25
+R26
+!s101 -O0
+R8
+Z30 n@a@l@u_vlg_vec_tst
+vModALU
+Z31 I[g3<0GlaN9PMhQDFL_27k2
+Z32 VbV?66LOKFmBRFZSIcaMG50
+R3
+Z33 w1700324469
+R5
+R6
+L0 31
+R7
+r1
+31
+R13
+R8
+Z34 n@mod@a@l@u
+Z35 !s100 AZ2@SAP:CGcLLVNC3ibMQ1
+Z36 !s108 1700324469.597000
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vModALU_vlg_check_tst
+Z37 !s100 Z;<m3<bU?gBIXzCXAozKW2
+Z38 Ik2PMUD^RK?RRS@]cW:Al>3
+Z39 V3cieVo_VDdHS7<fDlSnWE1
+R3
+Z40 w1700324468
+R22
+R23
+L0 65
+R7
+r1
+31
+Z41 !s108 1700324469.929000
+Z42 !s107 lab6.vt|
+R26
+R8
+Z43 n@mod@a@l@u_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vModALU_vlg_sample_tst
+Z44 !s100 fao;ol[Ji>jI1Y17fOAMd2
+Z45 IQD0HfGjWAlO?JJ^TI@;ie0
+Z46 V790keco8Fm4oO2V=L[aRm1
+R3
+R40
+R22
+R23
+L0 29
+R7
+r1
+31
+R41
+R42
+R26
+R8
+Z47 n@mod@a@l@u_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vModALU_vlg_vec_tst
+Z48 !s100 0^=D_=aVMe@2=R9dO]gU?3
+Z49 IDl4e?In;dNZTnGbBCoo1i1
+Z50 V;P7`ngMJCQKVEd37WGQFJ1
+R3
+R40
+R22
+R23
+Z51 L0 329
+R7
+r1
+31
+R41
+R42
+R26
+R8
+Z52 n@mod@a@l@u_vlg_vec_tst
+!i10b 1
+!s85 0
+!s101 -O0

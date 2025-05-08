@@ -1,0 +1,611 @@
+Simulator report for lab6
+Thu Nov 30 08:39:52 2023
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 20.0 ns      ;
+; Simulation Netlist Size     ; 236 nodes    ;
+; Simulation Coverage         ;       2.97 % ;
+; Total Number of Transitions ; 55           ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                   ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                 ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                              ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                    ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                     ;               ;
+; Vector input source                                                                        ; /home/student2/m3mansur/Desktop/lab6/ModALUWaveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                      ; On            ;
+; Check outputs                                                                              ; Off                                                     ; Off           ;
+; Report simulation coverage                                                                 ; On                                                      ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                      ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                      ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                      ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                     ; Off           ;
+; Detect glitches                                                                            ; Off                                                     ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                     ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                     ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                     ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                     ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                      ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                              ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                     ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                     ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                    ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 32-bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       2.97 % ;
+; Total nodes checked                                 ; 236          ;
+; Total output ports checked                          ; 236          ;
+; Total output ports with complete 1/0-value coverage ; 7            ;
+; Total output ports with no 1/0-value coverage       ; 209          ;
+; Total output ports with no 1-value coverage         ; 218          ;
+; Total output ports with no 0-value coverage         ; 220          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------+
+; Complete 1/0-Value Coverage                              ;
++-------------------+-------------------+------------------+
+; Node Name         ; Output Port Name  ; Output Port Type ;
++-------------------+-------------------+------------------+
+; |ModALU|Result[5] ; |ModALU|Result[5] ; regout           ;
+; |ModALU|Result[2] ; |ModALU|Result[2] ; regout           ;
+; |ModALU|Result[1] ; |ModALU|Result[1] ; regout           ;
+; |ModALU|Clk       ; |ModALU|Clk       ; out              ;
+; |ModALU|R1[1]     ; |ModALU|R1[1]     ; pin_out          ;
+; |ModALU|R1[2]     ; |ModALU|R1[2]     ; pin_out          ;
+; |ModALU|R2[1]     ; |ModALU|R2[1]     ; pin_out          ;
++-------------------+-------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------+
+; Missing 1-Value Coverage                                       ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |ModALU|Result~0     ; |ModALU|Result~0     ; out              ;
+; |ModALU|Result~1     ; |ModALU|Result~1     ; out              ;
+; |ModALU|Result~2     ; |ModALU|Result~2     ; out              ;
+; |ModALU|Result~3     ; |ModALU|Result~3     ; out              ;
+; |ModALU|Result~4     ; |ModALU|Result~4     ; out              ;
+; |ModALU|Result~5     ; |ModALU|Result~5     ; out              ;
+; |ModALU|Result~6     ; |ModALU|Result~6     ; out              ;
+; |ModALU|Result~7     ; |ModALU|Result~7     ; out              ;
+; |ModALU|Result~8     ; |ModALU|Result~8     ; out0             ;
+; |ModALU|Result~9     ; |ModALU|Result~9     ; out0             ;
+; |ModALU|Result~10    ; |ModALU|Result~10    ; out0             ;
+; |ModALU|Result~11    ; |ModALU|Result~11    ; out0             ;
+; |ModALU|Result~12    ; |ModALU|Result~12    ; out0             ;
+; |ModALU|Result~13    ; |ModALU|Result~13    ; out0             ;
+; |ModALU|Result~14    ; |ModALU|Result~14    ; out0             ;
+; |ModALU|Result~15    ; |ModALU|Result~15    ; out0             ;
+; |ModALU|Result[7]    ; |ModALU|Result[7]    ; regout           ;
+; |ModALU|Result[6]    ; |ModALU|Result[6]    ; regout           ;
+; |ModALU|Result[0]    ; |ModALU|Result[0]    ; regout           ;
+; |ModALU|WideNor0     ; |ModALU|WideNor0     ; out0             ;
+; |ModALU|A[0]         ; |ModALU|A[0]         ; out              ;
+; |ModALU|A[1]         ; |ModALU|A[1]         ; out              ;
+; |ModALU|A[2]         ; |ModALU|A[2]         ; out              ;
+; |ModALU|A[3]         ; |ModALU|A[3]         ; out              ;
+; |ModALU|A[4]         ; |ModALU|A[4]         ; out              ;
+; |ModALU|A[5]         ; |ModALU|A[5]         ; out              ;
+; |ModALU|A[6]         ; |ModALU|A[6]         ; out              ;
+; |ModALU|A[7]         ; |ModALU|A[7]         ; out              ;
+; |ModALU|B[0]         ; |ModALU|B[0]         ; out              ;
+; |ModALU|B[1]         ; |ModALU|B[1]         ; out              ;
+; |ModALU|B[2]         ; |ModALU|B[2]         ; out              ;
+; |ModALU|B[3]         ; |ModALU|B[3]         ; out              ;
+; |ModALU|B[4]         ; |ModALU|B[4]         ; out              ;
+; |ModALU|B[5]         ; |ModALU|B[5]         ; out              ;
+; |ModALU|B[6]         ; |ModALU|B[6]         ; out              ;
+; |ModALU|B[7]         ; |ModALU|B[7]         ; out              ;
+; |ModALU|OP[0]        ; |ModALU|OP[0]        ; out              ;
+; |ModALU|OP[2]        ; |ModALU|OP[2]        ; out              ;
+; |ModALU|OP[3]        ; |ModALU|OP[3]        ; out              ;
+; |ModALU|OP[4]        ; |ModALU|OP[4]        ; out              ;
+; |ModALU|OP[5]        ; |ModALU|OP[5]        ; out              ;
+; |ModALU|OP[6]        ; |ModALU|OP[6]        ; out              ;
+; |ModALU|OP[7]        ; |ModALU|OP[7]        ; out              ;
+; |ModALU|OP[8]        ; |ModALU|OP[8]        ; out              ;
+; |ModALU|OP[9]        ; |ModALU|OP[9]        ; out              ;
+; |ModALU|OP[10]       ; |ModALU|OP[10]       ; out              ;
+; |ModALU|OP[11]       ; |ModALU|OP[11]       ; out              ;
+; |ModALU|OP[12]       ; |ModALU|OP[12]       ; out              ;
+; |ModALU|OP[13]       ; |ModALU|OP[13]       ; out              ;
+; |ModALU|OP[14]       ; |ModALU|OP[14]       ; out              ;
+; |ModALU|OP[15]       ; |ModALU|OP[15]       ; out              ;
+; |ModALU|Neg          ; |ModALU|Neg          ; pin_out          ;
+; |ModALU|R1[0]        ; |ModALU|R1[0]        ; pin_out          ;
+; |ModALU|R2[2]        ; |ModALU|R2[2]        ; pin_out          ;
+; |ModALU|R2[3]        ; |ModALU|R2[3]        ; pin_out          ;
+; |ModALU|Selector0~1  ; |ModALU|Selector0~1  ; out0             ;
+; |ModALU|Selector0~2  ; |ModALU|Selector0~2  ; out0             ;
+; |ModALU|Selector0~3  ; |ModALU|Selector0~3  ; out0             ;
+; |ModALU|Selector0~4  ; |ModALU|Selector0~4  ; out0             ;
+; |ModALU|Selector0~5  ; |ModALU|Selector0~5  ; out0             ;
+; |ModALU|Selector0~6  ; |ModALU|Selector0~6  ; out0             ;
+; |ModALU|Selector0~7  ; |ModALU|Selector0~7  ; out0             ;
+; |ModALU|Selector0~8  ; |ModALU|Selector0~8  ; out0             ;
+; |ModALU|Selector1~1  ; |ModALU|Selector1~1  ; out0             ;
+; |ModALU|Selector1~2  ; |ModALU|Selector1~2  ; out0             ;
+; |ModALU|Selector1~3  ; |ModALU|Selector1~3  ; out0             ;
+; |ModALU|Selector1~4  ; |ModALU|Selector1~4  ; out0             ;
+; |ModALU|Selector1~5  ; |ModALU|Selector1~5  ; out0             ;
+; |ModALU|Selector1~6  ; |ModALU|Selector1~6  ; out0             ;
+; |ModALU|Selector1~7  ; |ModALU|Selector1~7  ; out0             ;
+; |ModALU|Selector1~8  ; |ModALU|Selector1~8  ; out0             ;
+; |ModALU|Selector2~1  ; |ModALU|Selector2~1  ; out0             ;
+; |ModALU|Selector2~2  ; |ModALU|Selector2~2  ; out0             ;
+; |ModALU|Selector2~3  ; |ModALU|Selector2~3  ; out0             ;
+; |ModALU|Selector2~4  ; |ModALU|Selector2~4  ; out0             ;
+; |ModALU|Selector2~5  ; |ModALU|Selector2~5  ; out0             ;
+; |ModALU|Selector2~6  ; |ModALU|Selector2~6  ; out0             ;
+; |ModALU|Selector2~7  ; |ModALU|Selector2~7  ; out0             ;
+; |ModALU|Selector2~8  ; |ModALU|Selector2~8  ; out0             ;
+; |ModALU|Selector2~9  ; |ModALU|Selector2~9  ; out0             ;
+; |ModALU|Selector3~2  ; |ModALU|Selector3~2  ; out0             ;
+; |ModALU|Selector3~3  ; |ModALU|Selector3~3  ; out0             ;
+; |ModALU|Selector3~4  ; |ModALU|Selector3~4  ; out0             ;
+; |ModALU|Selector3~5  ; |ModALU|Selector3~5  ; out0             ;
+; |ModALU|Selector3~6  ; |ModALU|Selector3~6  ; out0             ;
+; |ModALU|Selector3~7  ; |ModALU|Selector3~7  ; out0             ;
+; |ModALU|Selector3~9  ; |ModALU|Selector3~9  ; out0             ;
+; |ModALU|Selector4~2  ; |ModALU|Selector4~2  ; out0             ;
+; |ModALU|Selector4~3  ; |ModALU|Selector4~3  ; out0             ;
+; |ModALU|Selector4~4  ; |ModALU|Selector4~4  ; out0             ;
+; |ModALU|Selector4~5  ; |ModALU|Selector4~5  ; out0             ;
+; |ModALU|Selector4~6  ; |ModALU|Selector4~6  ; out0             ;
+; |ModALU|Selector4~7  ; |ModALU|Selector4~7  ; out0             ;
+; |ModALU|Selector4~8  ; |ModALU|Selector4~8  ; out0             ;
+; |ModALU|Selector4~9  ; |ModALU|Selector4~9  ; out0             ;
+; |ModALU|Selector5~1  ; |ModALU|Selector5~1  ; out0             ;
+; |ModALU|Selector5~2  ; |ModALU|Selector5~2  ; out0             ;
+; |ModALU|Selector5~3  ; |ModALU|Selector5~3  ; out0             ;
+; |ModALU|Selector5~4  ; |ModALU|Selector5~4  ; out0             ;
+; |ModALU|Selector5~5  ; |ModALU|Selector5~5  ; out0             ;
+; |ModALU|Selector5~6  ; |ModALU|Selector5~6  ; out0             ;
+; |ModALU|Selector5~7  ; |ModALU|Selector5~7  ; out0             ;
+; |ModALU|Selector5~8  ; |ModALU|Selector5~8  ; out0             ;
+; |ModALU|Selector5~9  ; |ModALU|Selector5~9  ; out0             ;
+; |ModALU|Selector5~10 ; |ModALU|Selector5~10 ; out0             ;
+; |ModALU|Selector6~1  ; |ModALU|Selector6~1  ; out0             ;
+; |ModALU|Selector6~2  ; |ModALU|Selector6~2  ; out0             ;
+; |ModALU|Selector6~3  ; |ModALU|Selector6~3  ; out0             ;
+; |ModALU|Selector6~4  ; |ModALU|Selector6~4  ; out0             ;
+; |ModALU|Selector6~5  ; |ModALU|Selector6~5  ; out0             ;
+; |ModALU|Selector6~6  ; |ModALU|Selector6~6  ; out0             ;
+; |ModALU|Selector6~7  ; |ModALU|Selector6~7  ; out0             ;
+; |ModALU|Selector6~8  ; |ModALU|Selector6~8  ; out0             ;
+; |ModALU|Selector6~9  ; |ModALU|Selector6~9  ; out0             ;
+; |ModALU|Selector6~10 ; |ModALU|Selector6~10 ; out0             ;
+; |ModALU|Selector7~1  ; |ModALU|Selector7~1  ; out0             ;
+; |ModALU|Selector7~2  ; |ModALU|Selector7~2  ; out0             ;
+; |ModALU|Selector7~3  ; |ModALU|Selector7~3  ; out0             ;
+; |ModALU|Selector7~4  ; |ModALU|Selector7~4  ; out0             ;
+; |ModALU|Selector7~5  ; |ModALU|Selector7~5  ; out0             ;
+; |ModALU|Selector7~6  ; |ModALU|Selector7~6  ; out0             ;
+; |ModALU|Selector7~7  ; |ModALU|Selector7~7  ; out0             ;
+; |ModALU|Selector7~8  ; |ModALU|Selector7~8  ; out0             ;
+; |ModALU|Selector7~9  ; |ModALU|Selector7~9  ; out0             ;
+; |ModALU|LessThan0~0  ; |ModALU|LessThan0~0  ; out0             ;
+; |ModALU|LessThan0~1  ; |ModALU|LessThan0~1  ; out0             ;
+; |ModALU|LessThan0~2  ; |ModALU|LessThan0~2  ; out0             ;
+; |ModALU|LessThan0~3  ; |ModALU|LessThan0~3  ; out0             ;
+; |ModALU|LessThan0~4  ; |ModALU|LessThan0~4  ; out0             ;
+; |ModALU|LessThan0~5  ; |ModALU|LessThan0~5  ; out0             ;
+; |ModALU|LessThan0~6  ; |ModALU|LessThan0~6  ; out0             ;
+; |ModALU|LessThan0~7  ; |ModALU|LessThan0~7  ; out0             ;
+; |ModALU|LessThan0~8  ; |ModALU|LessThan0~8  ; out0             ;
+; |ModALU|LessThan0~9  ; |ModALU|LessThan0~9  ; out0             ;
+; |ModALU|LessThan0~10 ; |ModALU|LessThan0~10 ; out0             ;
+; |ModALU|LessThan0~11 ; |ModALU|LessThan0~11 ; out0             ;
+; |ModALU|LessThan0~12 ; |ModALU|LessThan0~12 ; out0             ;
+; |ModALU|LessThan0~13 ; |ModALU|LessThan0~13 ; out0             ;
+; |ModALU|LessThan0~14 ; |ModALU|LessThan0~14 ; out0             ;
+; |ModALU|LessThan0~15 ; |ModALU|LessThan0~15 ; out0             ;
+; |ModALU|LessThan0~16 ; |ModALU|LessThan0~16 ; out0             ;
+; |ModALU|LessThan0~17 ; |ModALU|LessThan0~17 ; out0             ;
+; |ModALU|LessThan0~18 ; |ModALU|LessThan0~18 ; out0             ;
+; |ModALU|LessThan0~19 ; |ModALU|LessThan0~19 ; out0             ;
+; |ModALU|LessThan0~20 ; |ModALU|LessThan0~20 ; out0             ;
+; |ModALU|LessThan0~21 ; |ModALU|LessThan0~21 ; out0             ;
+; |ModALU|LessThan0~22 ; |ModALU|LessThan0~22 ; out0             ;
+; |ModALU|LessThan0~23 ; |ModALU|LessThan0~23 ; out0             ;
+; |ModALU|LessThan0~24 ; |ModALU|LessThan0~24 ; out0             ;
+; |ModALU|LessThan0~25 ; |ModALU|LessThan0~25 ; out0             ;
+; |ModALU|LessThan0~26 ; |ModALU|LessThan0~26 ; out0             ;
+; |ModALU|LessThan0~27 ; |ModALU|LessThan0~27 ; out0             ;
+; |ModALU|LessThan0~28 ; |ModALU|LessThan0~28 ; out0             ;
+; |ModALU|Add0~0       ; |ModALU|Add0~0       ; out0             ;
+; |ModALU|Add0~1       ; |ModALU|Add0~1       ; out0             ;
+; |ModALU|Add0~2       ; |ModALU|Add0~2       ; out0             ;
+; |ModALU|Add0~3       ; |ModALU|Add0~3       ; out0             ;
+; |ModALU|Add0~4       ; |ModALU|Add0~4       ; out0             ;
+; |ModALU|Add0~5       ; |ModALU|Add0~5       ; out0             ;
+; |ModALU|Add0~6       ; |ModALU|Add0~6       ; out0             ;
+; |ModALU|Add0~7       ; |ModALU|Add0~7       ; out0             ;
+; |ModALU|Add0~8       ; |ModALU|Add0~8       ; out0             ;
+; |ModALU|Add0~9       ; |ModALU|Add0~9       ; out0             ;
+; |ModALU|Add0~10      ; |ModALU|Add0~10      ; out0             ;
+; |ModALU|Add1~0       ; |ModALU|Add1~0       ; out0             ;
+; |ModALU|Add1~1       ; |ModALU|Add1~1       ; out0             ;
+; |ModALU|Add1~2       ; |ModALU|Add1~2       ; out0             ;
+; |ModALU|Add1~3       ; |ModALU|Add1~3       ; out0             ;
+; |ModALU|Add1~4       ; |ModALU|Add1~4       ; out0             ;
+; |ModALU|Add1~5       ; |ModALU|Add1~5       ; out0             ;
+; |ModALU|Add1~6       ; |ModALU|Add1~6       ; out0             ;
+; |ModALU|Add1~7       ; |ModALU|Add1~7       ; out0             ;
+; |ModALU|Add1~8       ; |ModALU|Add1~8       ; out0             ;
+; |ModALU|Add1~9       ; |ModALU|Add1~9       ; out0             ;
+; |ModALU|Add1~10      ; |ModALU|Add1~10      ; out0             ;
+; |ModALU|Add1~11      ; |ModALU|Add1~11      ; out0             ;
+; |ModALU|Add1~12      ; |ModALU|Add1~12      ; out0             ;
+; |ModALU|Add1~13      ; |ModALU|Add1~13      ; out0             ;
+; |ModALU|Add1~14      ; |ModALU|Add1~14      ; out0             ;
+; |ModALU|Add1~15      ; |ModALU|Add1~15      ; out0             ;
+; |ModALU|Add1~16      ; |ModALU|Add1~16      ; out0             ;
+; |ModALU|Add1~17      ; |ModALU|Add1~17      ; out0             ;
+; |ModALU|Add1~18      ; |ModALU|Add1~18      ; out0             ;
+; |ModALU|Add1~19      ; |ModALU|Add1~19      ; out0             ;
+; |ModALU|Add1~20      ; |ModALU|Add1~20      ; out0             ;
+; |ModALU|Add1~21      ; |ModALU|Add1~21      ; out0             ;
+; |ModALU|Add1~22      ; |ModALU|Add1~22      ; out0             ;
+; |ModALU|Add1~23      ; |ModALU|Add1~23      ; out0             ;
+; |ModALU|Add1~24      ; |ModALU|Add1~24      ; out0             ;
+; |ModALU|Add1~25      ; |ModALU|Add1~25      ; out0             ;
+; |ModALU|Add1~26      ; |ModALU|Add1~26      ; out0             ;
+; |ModALU|Add1~27      ; |ModALU|Add1~27      ; out0             ;
+; |ModALU|Add1~28      ; |ModALU|Add1~28      ; out0             ;
+; |ModALU|Add1~29      ; |ModALU|Add1~29      ; out0             ;
+; |ModALU|Add1~30      ; |ModALU|Add1~30      ; out0             ;
+; |ModALU|Add1~31      ; |ModALU|Add1~31      ; out0             ;
+; |ModALU|Add1~32      ; |ModALU|Add1~32      ; out0             ;
+; |ModALU|Add2~0       ; |ModALU|Add2~0       ; out0             ;
+; |ModALU|Add2~1       ; |ModALU|Add2~1       ; out0             ;
+; |ModALU|Add2~2       ; |ModALU|Add2~2       ; out0             ;
+; |ModALU|Add2~3       ; |ModALU|Add2~3       ; out0             ;
+; |ModALU|Add2~4       ; |ModALU|Add2~4       ; out0             ;
+; |ModALU|Add2~5       ; |ModALU|Add2~5       ; out0             ;
+; |ModALU|Add2~6       ; |ModALU|Add2~6       ; out0             ;
+; |ModALU|Add2~7       ; |ModALU|Add2~7       ; out0             ;
+; |ModALU|Add2~8       ; |ModALU|Add2~8       ; out0             ;
+; |ModALU|Add2~9       ; |ModALU|Add2~9       ; out0             ;
+; |ModALU|Add2~10      ; |ModALU|Add2~10      ; out0             ;
+; |ModALU|Add2~11      ; |ModALU|Add2~11      ; out0             ;
+; |ModALU|Add2~12      ; |ModALU|Add2~12      ; out0             ;
+; |ModALU|Equal0~0     ; |ModALU|Equal0~0     ; out0             ;
+; |ModALU|Equal2~0     ; |ModALU|Equal2~0     ; out0             ;
+; |ModALU|Equal3~0     ; |ModALU|Equal3~0     ; out0             ;
+; |ModALU|Equal4~0     ; |ModALU|Equal4~0     ; out0             ;
+; |ModALU|Equal5~0     ; |ModALU|Equal5~0     ; out0             ;
+; |ModALU|Equal6~0     ; |ModALU|Equal6~0     ; out0             ;
+; |ModALU|Equal7~0     ; |ModALU|Equal7~0     ; out0             ;
+; |ModALU|Equal8~0     ; |ModALU|Equal8~0     ; out0             ;
++----------------------+----------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------+
+; Missing 0-Value Coverage                                       ;
++----------------------+----------------------+------------------+
+; Node Name            ; Output Port Name     ; Output Port Type ;
++----------------------+----------------------+------------------+
+; |ModALU|Result~0     ; |ModALU|Result~0     ; out              ;
+; |ModALU|Result~1     ; |ModALU|Result~1     ; out              ;
+; |ModALU|Result~2     ; |ModALU|Result~2     ; out              ;
+; |ModALU|Result~3     ; |ModALU|Result~3     ; out              ;
+; |ModALU|Result~4     ; |ModALU|Result~4     ; out              ;
+; |ModALU|Result~5     ; |ModALU|Result~5     ; out              ;
+; |ModALU|Result~6     ; |ModALU|Result~6     ; out              ;
+; |ModALU|Result~7     ; |ModALU|Result~7     ; out              ;
+; |ModALU|Result~8     ; |ModALU|Result~8     ; out0             ;
+; |ModALU|Result~9     ; |ModALU|Result~9     ; out0             ;
+; |ModALU|Result~10    ; |ModALU|Result~10    ; out0             ;
+; |ModALU|Result~11    ; |ModALU|Result~11    ; out0             ;
+; |ModALU|Result~12    ; |ModALU|Result~12    ; out0             ;
+; |ModALU|Result~13    ; |ModALU|Result~13    ; out0             ;
+; |ModALU|Result~14    ; |ModALU|Result~14    ; out0             ;
+; |ModALU|Result~15    ; |ModALU|Result~15    ; out0             ;
+; |ModALU|Result[7]    ; |ModALU|Result[7]    ; regout           ;
+; |ModALU|Result[6]    ; |ModALU|Result[6]    ; regout           ;
+; |ModALU|Result[4]    ; |ModALU|Result[4]    ; regout           ;
+; |ModALU|Result[3]    ; |ModALU|Result[3]    ; regout           ;
+; |ModALU|Result[0]    ; |ModALU|Result[0]    ; regout           ;
+; |ModALU|WideNor0     ; |ModALU|WideNor0     ; out0             ;
+; |ModALU|A[0]         ; |ModALU|A[0]         ; out              ;
+; |ModALU|A[1]         ; |ModALU|A[1]         ; out              ;
+; |ModALU|A[2]         ; |ModALU|A[2]         ; out              ;
+; |ModALU|A[3]         ; |ModALU|A[3]         ; out              ;
+; |ModALU|A[4]         ; |ModALU|A[4]         ; out              ;
+; |ModALU|A[5]         ; |ModALU|A[5]         ; out              ;
+; |ModALU|A[6]         ; |ModALU|A[6]         ; out              ;
+; |ModALU|A[7]         ; |ModALU|A[7]         ; out              ;
+; |ModALU|B[0]         ; |ModALU|B[0]         ; out              ;
+; |ModALU|B[1]         ; |ModALU|B[1]         ; out              ;
+; |ModALU|B[2]         ; |ModALU|B[2]         ; out              ;
+; |ModALU|B[3]         ; |ModALU|B[3]         ; out              ;
+; |ModALU|B[4]         ; |ModALU|B[4]         ; out              ;
+; |ModALU|B[5]         ; |ModALU|B[5]         ; out              ;
+; |ModALU|B[6]         ; |ModALU|B[6]         ; out              ;
+; |ModALU|B[7]         ; |ModALU|B[7]         ; out              ;
+; |ModALU|OP[1]        ; |ModALU|OP[1]        ; out              ;
+; |ModALU|OP[2]        ; |ModALU|OP[2]        ; out              ;
+; |ModALU|OP[3]        ; |ModALU|OP[3]        ; out              ;
+; |ModALU|OP[4]        ; |ModALU|OP[4]        ; out              ;
+; |ModALU|OP[5]        ; |ModALU|OP[5]        ; out              ;
+; |ModALU|OP[6]        ; |ModALU|OP[6]        ; out              ;
+; |ModALU|OP[7]        ; |ModALU|OP[7]        ; out              ;
+; |ModALU|OP[8]        ; |ModALU|OP[8]        ; out              ;
+; |ModALU|OP[9]        ; |ModALU|OP[9]        ; out              ;
+; |ModALU|OP[10]       ; |ModALU|OP[10]       ; out              ;
+; |ModALU|OP[11]       ; |ModALU|OP[11]       ; out              ;
+; |ModALU|OP[12]       ; |ModALU|OP[12]       ; out              ;
+; |ModALU|OP[13]       ; |ModALU|OP[13]       ; out              ;
+; |ModALU|OP[14]       ; |ModALU|OP[14]       ; out              ;
+; |ModALU|OP[15]       ; |ModALU|OP[15]       ; out              ;
+; |ModALU|Neg          ; |ModALU|Neg          ; pin_out          ;
+; |ModALU|R1[0]        ; |ModALU|R1[0]        ; pin_out          ;
+; |ModALU|R1[3]        ; |ModALU|R1[3]        ; pin_out          ;
+; |ModALU|R2[0]        ; |ModALU|R2[0]        ; pin_out          ;
+; |ModALU|R2[2]        ; |ModALU|R2[2]        ; pin_out          ;
+; |ModALU|R2[3]        ; |ModALU|R2[3]        ; pin_out          ;
+; |ModALU|Selector0~1  ; |ModALU|Selector0~1  ; out0             ;
+; |ModALU|Selector0~2  ; |ModALU|Selector0~2  ; out0             ;
+; |ModALU|Selector0~3  ; |ModALU|Selector0~3  ; out0             ;
+; |ModALU|Selector0~4  ; |ModALU|Selector0~4  ; out0             ;
+; |ModALU|Selector0~5  ; |ModALU|Selector0~5  ; out0             ;
+; |ModALU|Selector0~6  ; |ModALU|Selector0~6  ; out0             ;
+; |ModALU|Selector0~7  ; |ModALU|Selector0~7  ; out0             ;
+; |ModALU|Selector0~8  ; |ModALU|Selector0~8  ; out0             ;
+; |ModALU|Selector1~1  ; |ModALU|Selector1~1  ; out0             ;
+; |ModALU|Selector1~2  ; |ModALU|Selector1~2  ; out0             ;
+; |ModALU|Selector1~3  ; |ModALU|Selector1~3  ; out0             ;
+; |ModALU|Selector1~4  ; |ModALU|Selector1~4  ; out0             ;
+; |ModALU|Selector1~5  ; |ModALU|Selector1~5  ; out0             ;
+; |ModALU|Selector1~6  ; |ModALU|Selector1~6  ; out0             ;
+; |ModALU|Selector1~7  ; |ModALU|Selector1~7  ; out0             ;
+; |ModALU|Selector1~8  ; |ModALU|Selector1~8  ; out0             ;
+; |ModALU|Selector2~2  ; |ModALU|Selector2~2  ; out0             ;
+; |ModALU|Selector2~3  ; |ModALU|Selector2~3  ; out0             ;
+; |ModALU|Selector2~4  ; |ModALU|Selector2~4  ; out0             ;
+; |ModALU|Selector2~5  ; |ModALU|Selector2~5  ; out0             ;
+; |ModALU|Selector2~6  ; |ModALU|Selector2~6  ; out0             ;
+; |ModALU|Selector2~7  ; |ModALU|Selector2~7  ; out0             ;
+; |ModALU|Selector2~8  ; |ModALU|Selector2~8  ; out0             ;
+; |ModALU|Selector3~1  ; |ModALU|Selector3~1  ; out0             ;
+; |ModALU|Selector3~2  ; |ModALU|Selector3~2  ; out0             ;
+; |ModALU|Selector3~3  ; |ModALU|Selector3~3  ; out0             ;
+; |ModALU|Selector3~4  ; |ModALU|Selector3~4  ; out0             ;
+; |ModALU|Selector3~5  ; |ModALU|Selector3~5  ; out0             ;
+; |ModALU|Selector3~6  ; |ModALU|Selector3~6  ; out0             ;
+; |ModALU|Selector3~7  ; |ModALU|Selector3~7  ; out0             ;
+; |ModALU|Selector3~8  ; |ModALU|Selector3~8  ; out0             ;
+; |ModALU|Selector3~9  ; |ModALU|Selector3~9  ; out0             ;
+; |ModALU|Selector4~1  ; |ModALU|Selector4~1  ; out0             ;
+; |ModALU|Selector4~2  ; |ModALU|Selector4~2  ; out0             ;
+; |ModALU|Selector4~3  ; |ModALU|Selector4~3  ; out0             ;
+; |ModALU|Selector4~4  ; |ModALU|Selector4~4  ; out0             ;
+; |ModALU|Selector4~5  ; |ModALU|Selector4~5  ; out0             ;
+; |ModALU|Selector4~6  ; |ModALU|Selector4~6  ; out0             ;
+; |ModALU|Selector4~7  ; |ModALU|Selector4~7  ; out0             ;
+; |ModALU|Selector4~8  ; |ModALU|Selector4~8  ; out0             ;
+; |ModALU|Selector4~9  ; |ModALU|Selector4~9  ; out0             ;
+; |ModALU|Selector4~10 ; |ModALU|Selector4~10 ; out0             ;
+; |ModALU|Selector5~2  ; |ModALU|Selector5~2  ; out0             ;
+; |ModALU|Selector5~3  ; |ModALU|Selector5~3  ; out0             ;
+; |ModALU|Selector5~4  ; |ModALU|Selector5~4  ; out0             ;
+; |ModALU|Selector5~5  ; |ModALU|Selector5~5  ; out0             ;
+; |ModALU|Selector5~6  ; |ModALU|Selector5~6  ; out0             ;
+; |ModALU|Selector5~7  ; |ModALU|Selector5~7  ; out0             ;
+; |ModALU|Selector5~8  ; |ModALU|Selector5~8  ; out0             ;
+; |ModALU|Selector5~10 ; |ModALU|Selector5~10 ; out0             ;
+; |ModALU|Selector6~2  ; |ModALU|Selector6~2  ; out0             ;
+; |ModALU|Selector6~3  ; |ModALU|Selector6~3  ; out0             ;
+; |ModALU|Selector6~4  ; |ModALU|Selector6~4  ; out0             ;
+; |ModALU|Selector6~5  ; |ModALU|Selector6~5  ; out0             ;
+; |ModALU|Selector6~6  ; |ModALU|Selector6~6  ; out0             ;
+; |ModALU|Selector6~7  ; |ModALU|Selector6~7  ; out0             ;
+; |ModALU|Selector6~8  ; |ModALU|Selector6~8  ; out0             ;
+; |ModALU|Selector6~10 ; |ModALU|Selector6~10 ; out0             ;
+; |ModALU|Selector7~1  ; |ModALU|Selector7~1  ; out0             ;
+; |ModALU|Selector7~2  ; |ModALU|Selector7~2  ; out0             ;
+; |ModALU|Selector7~3  ; |ModALU|Selector7~3  ; out0             ;
+; |ModALU|Selector7~4  ; |ModALU|Selector7~4  ; out0             ;
+; |ModALU|Selector7~5  ; |ModALU|Selector7~5  ; out0             ;
+; |ModALU|Selector7~6  ; |ModALU|Selector7~6  ; out0             ;
+; |ModALU|Selector7~7  ; |ModALU|Selector7~7  ; out0             ;
+; |ModALU|Selector7~8  ; |ModALU|Selector7~8  ; out0             ;
+; |ModALU|Selector7~10 ; |ModALU|Selector7~10 ; out0             ;
+; |ModALU|LessThan0~0  ; |ModALU|LessThan0~0  ; out0             ;
+; |ModALU|LessThan0~1  ; |ModALU|LessThan0~1  ; out0             ;
+; |ModALU|LessThan0~2  ; |ModALU|LessThan0~2  ; out0             ;
+; |ModALU|LessThan0~3  ; |ModALU|LessThan0~3  ; out0             ;
+; |ModALU|LessThan0~4  ; |ModALU|LessThan0~4  ; out0             ;
+; |ModALU|LessThan0~5  ; |ModALU|LessThan0~5  ; out0             ;
+; |ModALU|LessThan0~6  ; |ModALU|LessThan0~6  ; out0             ;
+; |ModALU|LessThan0~7  ; |ModALU|LessThan0~7  ; out0             ;
+; |ModALU|LessThan0~8  ; |ModALU|LessThan0~8  ; out0             ;
+; |ModALU|LessThan0~9  ; |ModALU|LessThan0~9  ; out0             ;
+; |ModALU|LessThan0~10 ; |ModALU|LessThan0~10 ; out0             ;
+; |ModALU|LessThan0~11 ; |ModALU|LessThan0~11 ; out0             ;
+; |ModALU|LessThan0~12 ; |ModALU|LessThan0~12 ; out0             ;
+; |ModALU|LessThan0~13 ; |ModALU|LessThan0~13 ; out0             ;
+; |ModALU|LessThan0~14 ; |ModALU|LessThan0~14 ; out0             ;
+; |ModALU|LessThan0~15 ; |ModALU|LessThan0~15 ; out0             ;
+; |ModALU|LessThan0~16 ; |ModALU|LessThan0~16 ; out0             ;
+; |ModALU|LessThan0~17 ; |ModALU|LessThan0~17 ; out0             ;
+; |ModALU|LessThan0~18 ; |ModALU|LessThan0~18 ; out0             ;
+; |ModALU|LessThan0~19 ; |ModALU|LessThan0~19 ; out0             ;
+; |ModALU|LessThan0~20 ; |ModALU|LessThan0~20 ; out0             ;
+; |ModALU|LessThan0~21 ; |ModALU|LessThan0~21 ; out0             ;
+; |ModALU|LessThan0~22 ; |ModALU|LessThan0~22 ; out0             ;
+; |ModALU|LessThan0~23 ; |ModALU|LessThan0~23 ; out0             ;
+; |ModALU|LessThan0~24 ; |ModALU|LessThan0~24 ; out0             ;
+; |ModALU|LessThan0~25 ; |ModALU|LessThan0~25 ; out0             ;
+; |ModALU|LessThan0~26 ; |ModALU|LessThan0~26 ; out0             ;
+; |ModALU|LessThan0~27 ; |ModALU|LessThan0~27 ; out0             ;
+; |ModALU|LessThan0~28 ; |ModALU|LessThan0~28 ; out0             ;
+; |ModALU|Add0~0       ; |ModALU|Add0~0       ; out0             ;
+; |ModALU|Add0~1       ; |ModALU|Add0~1       ; out0             ;
+; |ModALU|Add0~2       ; |ModALU|Add0~2       ; out0             ;
+; |ModALU|Add0~3       ; |ModALU|Add0~3       ; out0             ;
+; |ModALU|Add0~4       ; |ModALU|Add0~4       ; out0             ;
+; |ModALU|Add0~5       ; |ModALU|Add0~5       ; out0             ;
+; |ModALU|Add0~6       ; |ModALU|Add0~6       ; out0             ;
+; |ModALU|Add0~7       ; |ModALU|Add0~7       ; out0             ;
+; |ModALU|Add0~8       ; |ModALU|Add0~8       ; out0             ;
+; |ModALU|Add0~9       ; |ModALU|Add0~9       ; out0             ;
+; |ModALU|Add0~10      ; |ModALU|Add0~10      ; out0             ;
+; |ModALU|Add1~0       ; |ModALU|Add1~0       ; out0             ;
+; |ModALU|Add1~1       ; |ModALU|Add1~1       ; out0             ;
+; |ModALU|Add1~2       ; |ModALU|Add1~2       ; out0             ;
+; |ModALU|Add1~3       ; |ModALU|Add1~3       ; out0             ;
+; |ModALU|Add1~4       ; |ModALU|Add1~4       ; out0             ;
+; |ModALU|Add1~5       ; |ModALU|Add1~5       ; out0             ;
+; |ModALU|Add1~6       ; |ModALU|Add1~6       ; out0             ;
+; |ModALU|Add1~7       ; |ModALU|Add1~7       ; out0             ;
+; |ModALU|Add1~8       ; |ModALU|Add1~8       ; out0             ;
+; |ModALU|Add1~9       ; |ModALU|Add1~9       ; out0             ;
+; |ModALU|Add1~10      ; |ModALU|Add1~10      ; out0             ;
+; |ModALU|Add1~11      ; |ModALU|Add1~11      ; out0             ;
+; |ModALU|Add1~12      ; |ModALU|Add1~12      ; out0             ;
+; |ModALU|Add1~13      ; |ModALU|Add1~13      ; out0             ;
+; |ModALU|Add1~14      ; |ModALU|Add1~14      ; out0             ;
+; |ModALU|Add1~15      ; |ModALU|Add1~15      ; out0             ;
+; |ModALU|Add1~16      ; |ModALU|Add1~16      ; out0             ;
+; |ModALU|Add1~17      ; |ModALU|Add1~17      ; out0             ;
+; |ModALU|Add1~18      ; |ModALU|Add1~18      ; out0             ;
+; |ModALU|Add1~19      ; |ModALU|Add1~19      ; out0             ;
+; |ModALU|Add1~20      ; |ModALU|Add1~20      ; out0             ;
+; |ModALU|Add1~21      ; |ModALU|Add1~21      ; out0             ;
+; |ModALU|Add1~22      ; |ModALU|Add1~22      ; out0             ;
+; |ModALU|Add1~23      ; |ModALU|Add1~23      ; out0             ;
+; |ModALU|Add1~24      ; |ModALU|Add1~24      ; out0             ;
+; |ModALU|Add1~25      ; |ModALU|Add1~25      ; out0             ;
+; |ModALU|Add1~26      ; |ModALU|Add1~26      ; out0             ;
+; |ModALU|Add1~27      ; |ModALU|Add1~27      ; out0             ;
+; |ModALU|Add1~28      ; |ModALU|Add1~28      ; out0             ;
+; |ModALU|Add1~29      ; |ModALU|Add1~29      ; out0             ;
+; |ModALU|Add1~30      ; |ModALU|Add1~30      ; out0             ;
+; |ModALU|Add1~31      ; |ModALU|Add1~31      ; out0             ;
+; |ModALU|Add1~32      ; |ModALU|Add1~32      ; out0             ;
+; |ModALU|Add2~0       ; |ModALU|Add2~0       ; out0             ;
+; |ModALU|Add2~1       ; |ModALU|Add2~1       ; out0             ;
+; |ModALU|Add2~2       ; |ModALU|Add2~2       ; out0             ;
+; |ModALU|Add2~3       ; |ModALU|Add2~3       ; out0             ;
+; |ModALU|Add2~4       ; |ModALU|Add2~4       ; out0             ;
+; |ModALU|Add2~5       ; |ModALU|Add2~5       ; out0             ;
+; |ModALU|Add2~6       ; |ModALU|Add2~6       ; out0             ;
+; |ModALU|Add2~7       ; |ModALU|Add2~7       ; out0             ;
+; |ModALU|Add2~8       ; |ModALU|Add2~8       ; out0             ;
+; |ModALU|Add2~9       ; |ModALU|Add2~9       ; out0             ;
+; |ModALU|Add2~10      ; |ModALU|Add2~10      ; out0             ;
+; |ModALU|Add2~11      ; |ModALU|Add2~11      ; out0             ;
+; |ModALU|Add2~12      ; |ModALU|Add2~12      ; out0             ;
+; |ModALU|Equal1~0     ; |ModALU|Equal1~0     ; out0             ;
+; |ModALU|Equal2~0     ; |ModALU|Equal2~0     ; out0             ;
+; |ModALU|Equal3~0     ; |ModALU|Equal3~0     ; out0             ;
+; |ModALU|Equal4~0     ; |ModALU|Equal4~0     ; out0             ;
+; |ModALU|Equal5~0     ; |ModALU|Equal5~0     ; out0             ;
+; |ModALU|Equal6~0     ; |ModALU|Equal6~0     ; out0             ;
+; |ModALU|Equal7~0     ; |ModALU|Equal7~0     ; out0             ;
+; |ModALU|Equal8~0     ; |ModALU|Equal8~0     ; out0             ;
++----------------------+----------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+    Info: Processing started: Thu Nov 30 08:39:51 2023
+Info: Command: quartus_sim --simulation_results_format=VWF lab6 -c lab6
+Info (324025): Using vector source file "/home/student2/m3mansur/Desktop/lab6/ModALUWaveform.vwf"
+Warning (328014): Can't find node "student_id[3]" for functional simulation. Ignored vector source file node.
+Warning (328014): Can't find node "student_id[2]" for functional simulation. Ignored vector source file node.
+Warning (328014): Can't find node "student_id[1]" for functional simulation. Ignored vector source file node.
+Warning (328014): Can't find node "student_id[0]" for functional simulation. Ignored vector source file node.
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is       2.97 %
+Info (328052): Number of transitions in simulation is 55
+Info (324045): Vector file lab6.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 32-bit Simulator was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 273 megabytes
+    Info: Processing ended: Thu Nov 30 08:39:52 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
